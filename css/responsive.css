@@ -1,0 +1,146 @@
+/* فایل رسپانسیو لی اوت هستش */
+
+@media only screen and (max-width: 979px) {
+    .rslides img {
+        object-fit: cover
+    }
+    .wrapper,
+    .blog-wrapper,
+    .container {
+        width: 100%
+    }
+    .landing-services ul li {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0
+    }
+    .content {
+        display: block
+    }
+    .views p {
+        padding-top: 10px
+    }
+    .project-landing .grid figure {
+        width: 22%
+    }
+    .landing-footer img {
+        left: 37%;
+    }
+}
+
+
+/* ابتدا برای تبلت ها رو مینویسیم */
+
+
+/* -------------  چاپتر نوزدهم وبیستم--------------- */
+
+@media screen and (max-width:721px) {
+    .cover {
+        height: auto;
+    }
+    .masthead .logo {
+        float: none;
+        margin: 5px auto;
+        display: table;
+    }
+    .wrapper,
+    .container,
+    .blog-wrapper {
+        width: 100%;
+    }
+    .landing-services {
+        height: auto;
+    }
+    .services ul li {
+        width: 50%;
+        /* به علت اینکه مارجین داده بودیم به این عنصر و مارجین
+          فاصله ایجاد میکند از پددینگ استفاده میکنیم به جای آن  */
+        margin: 0;
+        padding: 15px;
+    }
+    .veiws p {
+        padding: 30px 0 0;
+        font-size: 25px;
+    }
+    .landing-list .grid figure {
+        width: 45%;
+        height: auto;
+        margin: 15px;
+    }
+    .landing-list .grid img {
+        width: 100%;
+    }
+    .landing-blog .contetn {
+        padding: 10px;
+    }
+    .landing-blog .contetn .post .right,
+    .landing-blog .contetn .post .left {
+        width: 100%;
+        float: none;
+    }
+    .landing-blog .contetn .post .right img,
+    .landing-blog .contetn .post .left img {
+        width: 100%;
+        float: none;
+    }
+    .landing-contact .map,
+    .landing-contact .contact-form {
+        width: 100%;
+        float: none;
+        padding: 10px;
+    }
+}
+
+
+/* ---------------- چاپتر بیستم وبیست و یکم-------------------- */
+
+
+/* برای موبایل ها */
+
+@media screen and (max-width:480px) {
+    .landing-nav {
+        display: none;
+    }
+    .responsive-nav .nav-bar {
+        display: block;
+    }
+    .cover .landing-cover {
+        top: 25%;
+    }
+    title h2 {
+        font-size: 30px;
+    }
+    .services ul li {
+        width: 100%;
+    }
+    .landing-about .about-text,
+    .landing-about .thumb {
+        width: 100%;
+        float: none;
+        margin-top: 0px;
+        padding-bottom: 0;
+    }
+    .landing-about .about-thumb,
+    .landing-about .about-thumb img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    .sticky-menu {
+        position: relative !important;
+    }
+    .veiws p {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .grid {
+        padding: 10px;
+    }
+    .landing-list .grid figure {
+        width: 100%;
+        margin: 0px;
+    }
+    .landing-footer img {
+        left: 27%;
+    }
+}

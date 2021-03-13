@@ -1,0 +1,1088 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+
+/* -----------چاپتر دوم پیاده سازی کدهای ریست------------- */
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+/* change colours to suit your needs */
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* change colours to suit your needs */
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* change border colour to suit your needs */
+
+
+/* این تگ را در چاپتر ششم با سلیقه خودمون ویرایش کردیم */
+
+hr {
+    display: block;
+    width: 100px;
+    border: 0;
+    border-bottom: 1px solid #dddddd;
+    margin: 25px auto;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+
+/* اضافه میکنیم کد های مورد نظر دیگر را */
+
+:focus {
+    outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* مقدار 400 یعنی نرمال */
+    font-weight: 400;
+}
+
+
+/* اضافه کردن فونت دلخواه */
+
+@font-face {
+    font-family: 'academy';
+    src: url('fonts/dinar.woff')
+}
+
+
+/*  برای تمامی عناصر باکس سایزینگ را درست میکنیم تا پدینگ سایز آنها را خراب نکند */
+
+* {
+    box-sizing: border-box;
+    /* برای سافاری و موزیلا و اپرا هم اعمال میکنیم */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    /* فونت دینار حروف فارسی را پشتیبانی میکند و فونت مارید حروف انگلیسی را پشتیبانی میکند
+    برای ما */
+    font-family: 'academy', 'Myraid pro', Tahoma;
+}
+
+
+/* تنظیم فاصله بین خطوط */
+
+p {
+    line-height: 25px;
+}
+
+
+/* مکس وید را 100% میدهیم چون که نمیخواهیم عرض عکس از عرض والد آن بیشتر باشد
+بسیار مهم است این کار */
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    /* ترنزیشن دلخواه رو اعمال میکنیم */
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    color: #888;
+}
+
+
+/* درچاپتر پنجم این کلاس ایجاد شده و در این مکان قرار گرفته است 
+ وقتی بوث قرار میدهیم در سمت راست و چپ عنصر چیزی قرار نمیگیرد */
+
+.clearfix {
+    clear: both;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* در چاپتر هشتم ان را درست کردیم */
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+/*------------- چاپتر سوم-پیاده سازی اسلایدر---------------*/
+
+.cover {
+    /* در هر رزولوشنی که باشیم میخواهیم که عرض کل را پوشش دهیم */
+    width: 100%;
+    height: 600px;
+    /* برای اینکه بتوانیم به فرزندان آن موقیعت وسط صفحه را بدهیم ریلیتیو به این کلاس والد میدهیم */
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* این کدها مربوط به کتابخانه ریسپانسیو اسلایدر هست
+در فایل کتابخانه موجود است */
+
+
+/*! http://responsiveslides.com v1.55 by @viljamis */
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    /* مقدار آن را از اتو به 600 تغییر دادم تا طراحی نویگیشن بهتر باشه */
+    height: 600px;
+    float: left;
+    width: 100%;
+    border: 0;
+}
+
+
+/*--------------- چاپتر چهارم------------- */
+
+.cover .landing-cover {
+    /* برای اینکه نوشته را در وسط والد قرار دهیم پوزیشن را
+    ابسولوت میدهیم.در بالاتر والد را ریلیتیو کرده بودیم */
+    position: absolute;
+    /* تعیین موقعیت عنصر */
+    width: 100%;
+    text-align: center;
+    top: 35%;
+    /* برای اینکه نوشته روی تصویر بیاید */
+    z-index: 1000;
+    color: white;
+}
+
+.cover .landing-cover .text {
+    font-size: 30px;
+    margin: 10px auto 50px;
+    /* خلاصه بالا هستش */
+    /* margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto:
+    margin-bottom: 50px;
+     */
+}
+
+
+/* استایل دهی به دکمه ها */
+
+.cover .landing-cover .twice ul {
+    /* برای اینکه المان وسط قرار بگیرد
+    اگر المان عرض داشت لازم نبود که دیسپلی را تیبل قرار دهیم */
+    display: table;
+    margin: 0 auto;
+}
+
+.cover .landing-cover .twice ul li {
+    /* برای اینکه کنار قرار بگیرند دکمه ها */
+    float: right;
+}
+
+.cover .landing-cover .twice ul li a {
+    width: 170px;
+    /* برای اینکه عرض به این المان اعمال بشه حتما باید دیسپلی را برای ان تعریف کنیم
+    مثل بلاک یا اینلاین بلاک */
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 13px;
+    border-radius: 2px;
+    margin: 0 5px;
+    line-height: 25px;
+    color: white;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+.cover .landing-cover .twice ul li a.signup-btn {
+    background-color: #e74c3c;
+}
+
+.cover .landing-cover .twice ul li a.contact-btn {
+    background-color: #27ae60;
+}
+
+
+/*-------- چاپتر پنجم--------- */
+
+.sticky-menu {
+    z-index: 1000 !important;
+}
+
+.masthead {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    float: right;
+    z-index: 1000;
+    /* پوزیشن ریلیتیو باعث میشه که عنصر جلوتر از عناصر دیگر قرار بگیرد
+    اینجا برای اینکه باکس شادو دیده شود این کار را کردیم */
+    position: relative;
+}
+
+
+/* استایل دهی به نویگیشن */
+
+.masthead .landing-nav {
+    float: right;
+}
+
+.masthead .landing-nav ul li {
+    /* به این ترتیب عناصر در کنار هم چیده میشوند */
+    float: right;
+}
+
+.masthead .landing-nav ul li a {
+    color: #666;
+    /* برای اینکه پددینگ اعمال بشه */
+    display: block;
+    font-size: 15px;
+    padding: 0 15px;
+    line-height: 60px;
+}
+
+.masthead .landing-nav ul li a:hover {
+    background: #e74c3c;
+    color: white;
+}
+
+.masthead .logo {
+    float: left;
+    margin: 7px 0 0;
+}
+
+
+/*---------------------- چاپتر ششم----------- */
+
+.landing-services {
+    width: 100%;
+    /* برای اینکه پایین منو نویگیشن قرار بگیرد رایت دادیم فلوت را */
+    float: right;
+    background: #e74c3c;
+    /* برای اینکه هدر و بقیه نوشته ها به نویگیشن نچسبند */
+    padding: 50px 10px;
+}
+
+.title {
+    color: #fff;
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 35px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+.services ul li {
+    width: 30%;
+    /* در کنار هم قرار میگیرند */
+    float: right;
+    /* با اعمال مارجین وسط چین میوشند */
+    margin: 20px;
+    /* برای قرار دادن آیکن ها ریلیتیو دادیم */
+    position: relative;
+}
+
+.services ul li h3 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    /* از ایکن فاصله بگیرد */
+    padding-right: 35px;
+}
+
+
+/* با این روش ایکن دیگه به تگ اچ3 نمیچسبد */
+
+
+/* این قسمت برای ----چاپتر هفتم----- است */
+
+.services ul li h3 i {
+    position: absolute;
+    right: 0;
+}
+
+.services ul li p {
+    color: #fff;
+    text-align: justify;
+    line-height: 23px;
+    font-size: 14px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ---------------چاپتر هشتم----------------- */
+
+.landing-about {
+    width: 100%;
+    float: right;
+}
+
+.landing-about .about-text {
+    width: 60%;
+    float: right;
+    /* اینجا پدیینگ  کمی باعث منظم شدن متن میشه !!! */
+    padding: 30px;
+}
+
+.landing-about .about-text h3 {
+    font-size: 25px;
+    padding: 20px 0;
+    color: #666;
+}
+
+.landing-about .about-text p {
+    text-align: justify;
+    line-height: 30px;
+    direction: rtl;
+    color: #666;
+    font-size: 16px;
+}
+
+.landing-about .about-thumb {
+    width: 40%;
+    float: left;
+    margin: 10px 0 0;
+}
+
+.landing-about .about-thumb img {
+    float: left;
+}
+
+
+/* -----------------چاپتر نهم------------- */
+
+.veiws {
+    width: 100%;
+    height: 300px;
+    /* فلوت رایت در اینجا باعث میشود که بیاید پایین درباره ما */
+    float: right;
+    background: url(images/cover/food-solution-bg.jpg);
+    /* تنظیمات عکس برای عقب رفتن آن با دادن کاور
+    و فیکس شدن ان با ویزگی اتچمنت */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.veiws p {
+    font-size: 30px;
+    color: #fff;
+    padding: 60px 0 0;
+    text-align: center;
+    line-height: 60px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+
+/* -------------چاپتر دهم-------------- */
+
+.landing-list {
+    width: 100%;
+    float: right;
+    padding: 50px 0;
+}
+
+.landing-list .title {
+    font-size: 35px;
+    color: #666;
+}
+
+.landing-list .grid figure {
+    width: 18%;
+    margin: 10px;
+    height: 227px;
+    float: right;
+    /* ارتفاع تصاویر اصلی از ارتفاعی که ما دادیم بیشتر بودن پس هیددن قرار میدهیم اورفلو را */
+    overflow: hidden;
+    /* برای اینکه کپشن تصاویر را موقعیت دهی کنیم ریلیتیو در نظر میگیریم این عنصر را */
+    position: relative;
+}
+
+
+/* اعمال انیمیشن به تگ های ایمیج */
+
+.landing-list .grid figure img {
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.landing-list .grid figure:hover img {
+    transform: scale(1.2) rotate(5deg);
+    -webkit-transform: scale(1.2) rotate(5deg);
+    -moz-transform: scale(1.2) rotate(5deg);
+    -o-transform: scale(1.2) rotate(5deg);
+}
+
+.landing-list .grid figcaption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /* پس زمینه تار میدهیم به عکس ها */
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.landing-list .grid figcaption h2 {
+    position: absolute;
+    top: 45%;
+    color: #fff;
+    /* با این 3 ویژگی زیر تگ اچ 2 وسط چین میشود */
+    text-align: center;
+    left: 0;
+    right: 0;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    font-size: 20px;
+}
+
+
+/* ---------------چاپتر یازدهم-------------- */
+
+.landing-blog {
+    width: 100%;
+    float: right;
+    /* در اینجا ارتفاع را تعریف نمیکنیم
+    بلکه با توجه به تعداد محتویات ارتفاع مورد نظر ایجاد میشود */
+    background: url(images/cover/food-solution-bg.jpg);
+    /* تنظیمات عکس برای عقب رفتن آن با دادن کاور
+    و فیکس شدن ان با ویزگی اتچمنت */
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0;
+}
+
+.blog-wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.landing-blog .title h3 {
+    font-size: 35px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+.landing-blog .contetn {
+    margin: 20px auto;
+}
+
+.landing-blog .contetn .post {
+    /* عرض صد در صد یعنی اینکه به اندازه والد خودش عرض بگیرد
+    اینجا والد 960 پیکسل عرض دارد */
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    position: relative;
+    float: right;
+    margin: 10px auto;
+}
+
+.landing-blog .contetn .post h2 {
+    color: #777777;
+    padding: 10px 20px 5px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.landing-blog .contetn .post p {
+    /* با دیسپلی تیبل وسط می آید */
+    display: table;
+    font-size: 13px;
+    padding: 10px 20px 0;
+    color: #888;
+}
+
+
+/* درست کردن ادامه مطلب است */
+
+.landing-blog .contetn .post .more {
+    float: left;
+    color: #d3d3d3;
+    padding: 5px 15px;
+    font-size: 10px;
+    margin: 0 10px;
+    line-height: 2;
+    border-radius: 2px;
+}
+
+.landing-blog .contetn .post .more:hover {
+    background: #e74c3c;
+    color: #fff;
+}
+
+.landing-blog .contetn .post .right {
+    width: 30%;
+    float: right;
+}
+
+.landing-blog .contetn .post .right img {
+    float: right;
+}
+
+.landing-blog .contetn .post .left {
+    width: 30%;
+    float: left;
+}
+
+.landing-blog .contetn .post .left img {
+    float: left;
+}
+
+.show-more {
+    /* وسط چین میکنیم آن را با دو ویژگی زیر */
+    margin: 20px auto 0;
+    display: table;
+    font-size: 13px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 10px 30px;
+    text-align: center;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+.show-more:hover {
+    background: #fff;
+    color: #888;
+}
+
+
+/* -----------------چاپتر دوازدهم------------------- */
+
+.landing-customer {
+    width: 100%;
+    float: right;
+    padding: 40px 0;
+}
+
+.landing-customer .title {
+    color: #666;
+    text-align: center;
+}
+
+.landing-customer .title h3 {
+    font-size: 35px;
+}
+
+
+/* یکسری از تنظیمات را در فایل سی اس اس کتابخانه اول کروسل درست کردیم
+حتما دقت کن به این تنظیمات هم */
+
+.landing-customer .item img {
+    opacity: 0.6;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.landing-customer .item img:hover {
+    opacity: 1;
+}
+
+
+/* ----------------چاپتر سیزدهم--------------- */
+
+.landing-contact {
+    width: 100%;
+    float: right;
+    background: url(images/map.png) left no-repeat;
+    padding-bottom: 20px;
+}
+
+.landing-contact .map {
+    float: right;
+    width: 65%;
+}
+
+.landing-contact .contact-form {
+    float: left;
+    width: 33%;
+}
+
+.landing-contact .contact-form input {
+    width: 100%;
+    background: none;
+    border: 1px solid #e2e2e2;
+    padding: 5px 10px;
+    margin: 5px auto;
+    font-family: 'academy', 'Myraid Pro', Tahoma;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.landing-contact .contact-form textarea {
+    width: 100%;
+    background: none;
+    border: 1px solid #e2e2e2;
+    padding: 5px 10px;
+    margin: 5px auto;
+    font-family: 'academy', 'Myraid Pro', Tahoma;
+    resize: none;
+    height: 150px;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+
+/* دادن فوکوس با رنگ قرمز به اطراف کادر ها در هنگام کلیک کاربر */
+
+.landing-contact .contact-form input:focus,
+.landing-contact .contact-form textarea:focus {
+    border-color: #e74c3c;
+}
+
+.landing-contact .contact-form input[type="submit"] {
+    color: #fff;
+    background: #e74c3c;
+    border: 1px solid #e74c3c;
+    cursor: pointer;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+.landing-contact .contact-form input[type="submit"]:hover {
+    background: none;
+    color: #e74c3c;
+}
+
+
+/* ------------------چاپتر چهاردهم----------------------- */
+
+.landing-footer {
+    width: 100%;
+    float: right;
+    background: #f9fafa;
+}
+
+.landing-footer .social {
+    display: table;
+    margin: 20px auto 0;
+}
+
+
+/* برای اینکه کنار هم قرار بگیرند */
+
+.landing-footer .social ul li {
+    float: right;
+}
+
+.landing-footer .social ul li a {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    display: block;
+    position: relative;
+    border-radius: 2px;
+}
+
+
+/* وسط چین کردن آیکن فونت ها با کمک ویژگی پوزیشن */
+
+.landing-footer .social ul li a i {
+    position: absolute;
+    top: 35%;
+    right: 0;
+    left: 0;
+}
+
+
+/* رنگ خاص دادن به هرکدام از آیکن فونت ها */
+
+.landing-footer .social ul li:nth-child(1):hover a {
+    background: #3b5998;
+    color: #fff;
+}
+
+.landing-footer .social ul li:nth-child(2):hover a {
+    background: #dd4b39;
+    color: #fff;
+}
+
+.landing-footer .social ul li:nth-child(3):hover a {
+    background: #1da1f2;
+    color: #fff;
+}
+
+.landing-footer .social ul li:nth-child(4):hover a {
+    background: #405de6;
+    color: #fff;
+}
+
+.landing-footer .copyright {
+    position: relative;
+    text-align: center;
+    height: 35px;
+}
+
+.landing-footer img {
+    display: block;
+    position: absolute;
+    top: 35%;
+    left: 43%;
+    text-align: center;
+    height: 100%;
+    float: left;
+}
+
+.landing-footer .copyright p {
+    position: absolute;
+    top: 35%;
+    right: -25px;
+    left: 0;
+    float: right;
+    text-align: center;
+    color: #adabab;
+    padding: 5px auto 20px;
+    font-size: 13px;
+}
+
+
+/* -----------چاپتر پانزدهم------------- */
+
+.signup {
+    padding: 15px 15px 0;
+}
+
+.signup input {
+    width: 100%;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    font-family: 'academy', 'Myraid Pro', Tahoma;
+    line-height: 25px;
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.signup input[type="submit"] {
+    color: #fff;
+    background: #e74c3c;
+    border: 1px solid #e74c3c;
+    cursor: pointer;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+
+/* --------------چاپتر شانزدهم-------------- */
+
+.signup .privacy {
+    /* برای اسکرول شدن حتما باید ارتفاع بدهیم */
+    height: 150px;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.signup .privacy p {
+    font-size: 12px;
+    line-height: 25px;
+}
+
+
+/* -------------------چاپتر بیست و یکم------------------- */
+
+.responsive-nav {
+    float: right;
+    display: block;
+}
+
+.responsive-nav ul {
+    width: 100%;
+    display: none;
+    position: absolute;
+    background: #fff;
+    top: 75px;
+    z-index: 1000;
+}
+
+.responsive-nav ul li {
+    display: block;
+    float: none;
+}
+
+.responsive-nav ul li a {
+    color: #666;
+    /* برای اینکه پددینگ اعمال بشه */
+    display: block;
+    font-size: 15px;
+    padding: 0 15px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.responsive-nav ul li a:hover {
+    background: #27ae60;
+    color: #fff;
+}
+
+.responsive-nav .nav-bar {
+    display: none;
+    cursor: pointer;
+    margin: 20px 30px 0 0;
+}
+
+.responsive-nav .nav-bar .icon-bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #373737;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+
+/* ------------------چاپتر بیست و دوم-------------------- */
+
+.landing-footer .top {
+    position: relative;
+}
+
+.landing-footer .top .tooltip {
+    width: 85px;
+    position: absolute;
+    bottom: 100%;
+    right: -25px;
+    opacity: 0;
+    margin: 0;
+    background: #141414;
+    font-size: 12px;
+    text-align: center;
+    line-height: 15px;
+    padding: 10px 15px;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    z-index: 1000;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.landing-footer .top:hover .tooltip {
+    opacity: 1;
+}
+
+
+/* قرار دادن فلش در زیر تولتیپ با کمک المان کاذب افتر */
+
+.landing-footer .top .tooltip::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    border: 5px solid #141414;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
