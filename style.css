@@ -323,7 +323,7 @@ a {
 .rslides img {
     display: block;
     /* مقدار آن را از اتو به 600 تغییر دادم تا طراحی نویگیشن بهتر باشه */
-    height: 600px;
+    height: 800px;
     float: left;
     width: 100%;
     border: 0;
